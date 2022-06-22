@@ -1,4 +1,4 @@
-<header><h1>Medium Mashup</h1></header>
+<header><h1><a href="/">Medium Mashup</a></h1></header>
 
 <main>
 	<slot />

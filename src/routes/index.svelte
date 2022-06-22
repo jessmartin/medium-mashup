@@ -1,3 +1,26 @@
+<script context="module" lang="ts">
+	import type { Load } from '@sveltejs/kit';
+	export const load: Load = async ({ fetch }) => {
+		const constraints = await fetch('/api/constraints.json');
+		const allConstraints = await constraints.json();
+
+		return {
+			props: {
+				constraints: allConstraints
+			}
+		};
+	};
+</script>
+
+<script lang="ts">
+	export let constraints: any;
+</script>
+
+<svelte:head>
+	<title>Medium Mashup: An Innovation Game</title>
+	<meta property="og:title" content="Medium Mashup: An Innovation Game" />
+</svelte:head>
+
 <h3>Welcome to Medium Mashup!</h3>
 <p>
 	Medium Mashup is an Innovation Game where you invent a new tool to solve a specific persona's
@@ -50,4 +73,18 @@
 		What did you learn about the interactions of the constraints you were given (the mediums and/or
 		notations)?
 	</li>
+</ul>
+
+<h2>The Constraint Deck</h2>
+<p>
+	The Constraint deck consists of Mediums and Notations that must be used in the tool you design for
+	the Client.
+</p>
+
+<ul>
+	{#each constraints as constraint}
+		<li>
+			<span><a href={constraint.path}>{constraint.meta.title}</a></span>
+		</li>
+	{/each}
 </ul>
