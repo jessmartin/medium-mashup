@@ -1,2 +1,53 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h3>Welcome to Medium Mashup!</h3>
+<p>
+	Medium Mashup is an Innovation Game where you invent a new tool to solve a specific persona's
+	problem using randomly selected mediums and notations. The purpose of Medium Mashup is to help you
+	move beyond features of a software tool to the underlying Mediums and Notations. Medium Mashup is
+	an Innovation Game where you invent a new tool to solve a specific persona's problem using
+	randomly selected Mediums and Notations. The purpose of Medium Mashup is to help you move beyond
+	features of a software tool to the underlying Mediums and Notations.
+</p>
+
+<h2>The Setup</h2>
+<p>
+	You're a toolsmith. You specialize in building bespoke tools for specialized use cases with
+	arbitrary constraints. You operate as a team under tight timelines, and you (almost) always
+	deliver. I hope you're up for today's challenge!
+</p>
+<ul>
+	<ol>
+		<strong>Gather materials.</strong> You'll need the typical paper prototyping materials: unlined and
+		grid paper, multi-colored sharpies, sticky notes, scissors, tape, highlighters, rulers.
+	</ol>
+	<ol>
+		<strong>Form a team.</strong> We recommend a team of 3-5 persons.
+	</ol>
+	<ol>
+		<strong>Discover the constraints.</strong> Draw 3 Medium and/or Notation cards from the Constraints
+		deck. If you want to make it a bit easier, draw 4 cards and discard 1.
+	</ol>
+	<ol><strong>Get to know the client.</strong> Draw a Persona card. Read their background.</ol>
+	<ol>
+		<strong>Choose a Workflow Goal.</strong> Read the client's Workflow Goals aloud together and discuss.
+		Choose one of the Workflow Goals that your team will build a tool for.
+	</ol>
+	<ol>
+		<strong>Start building!</strong> You and your team have 90 minutes to design a new Tool that satisfies
+		one of your Client's Workflow Goals while utilizing all of the Constraints.
+	</ol>
+	<ol>
+		<strong>Present the solution.</strong> Give a brief (5-10 minutes?) presentation walking through
+		the tool that your team came up with. Describe the workflow in detail.
+	</ol>
+</ul>
+
+<h2>Advice for Presenting The Solution</h2>
+<p>Here are some questions you might want to answer:</p>
+<ul>
+	<li>What did you choose to include and why?</li>
+	<li>What did you leave out?</li>
+	<li>
+		What did you learn about the interactions of the constraints you were given (the mediums and/or
+		notations)?
+	</li>
+</ul>
