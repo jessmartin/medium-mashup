@@ -1,6 +1,6 @@
 # Medium Mashup
 
-Medium mashup is an Innovation Game where you invent a new tool to solve a specific person's problem using randomly selected mediums and notations. The purpose of medium mashup is to help you move beyond features of a software tool to the underlying mediums and notations.
+[Medium Mashup](https://mediums.jessmart.in) is an Innovation Game where you invent a new tool to solve a specific person's problem using randomly selected mediums and notations. The purpose of medium mashup is to help you move beyond features of a software tool to the underlying mediums and notations.
 
 ## Developing
 
