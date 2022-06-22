@@ -87,4 +87,17 @@
 			<span><a href={constraint.path}>{constraint.meta.title}</a></span>
 		</li>
 	{/each}
+	<li><span>More coming soon...</span></li>
+</ul>
+
+<h2>The Persona Deck</h2>
+<p>
+	The Persona deck consists of clients with specific Workflow Goals that you must build a tool for.
+</p>
+<ul>
+	<li><span>Historical Fiction Author</span></li>
+	<li><span>Video Game Maker</span></li>
+	<li><span>Construction Project Manager</span></li>
+	<li><span>Children's Museum Curator</span></li>
+	<li><span>More coming soon...</span></li>
 </ul>

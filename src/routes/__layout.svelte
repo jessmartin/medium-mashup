@@ -4,4 +4,10 @@
 	<slot />
 </main>
 
-<footer>A project by <a href="https://jessmart.in">Jess Martin</a>.</footer>
+<footer>
+	<p>
+		Code available <a href="https://github.com/jessmartin/medium-mashup">on GitHub</a>.
+		Contributions welcome!
+	</p>
+	<p>A project by <a href="https://jessmart.in">Jess Martin</a>.</p>
+</footer>
