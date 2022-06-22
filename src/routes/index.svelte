@@ -37,32 +37,32 @@
 	arbitrary constraints. You operate as a team under tight timelines, and you (almost) always
 	deliver. I hope you're up for today's challenge!
 </p>
-<ul>
-	<ol>
+<ol>
+	<li>
 		<strong>Gather materials.</strong> You'll need the typical paper prototyping materials: unlined and
 		grid paper, multi-colored sharpies, sticky notes, scissors, tape, highlighters, rulers.
-	</ol>
-	<ol>
+	</li>
+	<li>
 		<strong>Form a team.</strong> We recommend a team of 3-5 persons.
-	</ol>
-	<ol>
+	</li>
+	<li>
 		<strong>Discover the constraints.</strong> Draw 3 Medium and/or Notation cards from the Constraints
 		deck. If you want to make it a bit easier, draw 4 cards and discard 1.
-	</ol>
-	<ol><strong>Get to know the client.</strong> Draw a Persona card. Read their background.</ol>
-	<ol>
+	</li>
+	<li><strong>Get to know the client.</strong> Draw a Persona card. Read their background.</li>
+	<li>
 		<strong>Choose a Workflow Goal.</strong> Read the client's Workflow Goals aloud together and discuss.
 		Choose one of the Workflow Goals that your team will build a tool for.
-	</ol>
-	<ol>
+	</li>
+	<li>
 		<strong>Start building!</strong> You and your team have 90 minutes to design a new Tool that satisfies
 		one of your Client's Workflow Goals while utilizing all of the Constraints.
-	</ol>
-	<ol>
+	</li>
+	<li>
 		<strong>Present the solution.</strong> Give a brief (5-10 minutes?) presentation walking through
 		the tool that your team came up with. Describe the workflow in detail.
-	</ol>
-</ul>
+	</li>
+</ol>
 
 <h2>Advice for Presenting The Solution</h2>
 <p>Here are some questions you might want to answer:</p>
