@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import Layout from './Layout.svelte';
 	export let title = '';
 	export let description = '';
