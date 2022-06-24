@@ -36,7 +36,7 @@
 			<slot />
 		</article>
 
-		<ul class="flex flex-wrap abs">
+		<ul class="flex flex-wrap">
 			{#each exemplars as exemplar}
 				<li class="flex-shrink-0 w-32 h-32 bg-slate-800">{exemplar.title}</li>
 			{/each}

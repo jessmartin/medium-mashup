@@ -6,12 +6,7 @@
 	export let year = '';
 	export let constraintType = '';
 	export let image = '';
-	export let exemplars: Array<Exemplar> = [];
-
-	interface Exemplar {
-		title: string;
-		image: string;
-	}
+	export let exemplars = [];
 </script>
 
 <Layout {title} {description} {inventors} {year} {constraintType} {image} {exemplars}>
