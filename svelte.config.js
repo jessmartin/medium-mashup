@@ -12,7 +12,9 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	preprocess: [
-		preprocess(),
+		preprocess({
+			postcss: true
+		}),
 		mdsvex({
 			extensions: ['.md'],
 			layout: {

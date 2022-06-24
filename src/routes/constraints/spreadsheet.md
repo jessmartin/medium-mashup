@@ -5,5 +5,8 @@ inventors: Dan Bricklin and Bob Frankston
 year: 1979
 image: spreadsheet.png
 constraintType: medium
-examples: VisiCalc, Excel, Numbers
+exemplars:
+  - { title: VisiCalc, image: visicalc.png }
+  - { title: Excel, image: excel.png }
+  - { title: Google Sheets, image: googlesheets.png }
 ---
