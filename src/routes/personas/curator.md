@@ -6,5 +6,3 @@ workflowGoals:
   - Understand what children want and what they like.
   - Track a budget and keep exhibits within budget.
 ---
-
-Testing
