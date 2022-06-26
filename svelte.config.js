@@ -12,11 +12,14 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	preprocess: [
-		preprocess(),
+		preprocess({
+			postcss: true
+		}),
 		mdsvex({
 			extensions: ['.md'],
 			layout: {
-				constraints: 'src/routes/constraints/_constraint.svelte'
+				constraints: 'src/routes/constraints/_constraint.svelte',
+				personas: 'src/routes/personas/_persona.svelte'
 			}
 		})
 	],

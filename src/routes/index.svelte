@@ -3,10 +3,13 @@
 	export const load: Load = async ({ fetch }) => {
 		const constraints = await fetch('/api/constraints.json');
 		const allConstraints = await constraints.json();
+		const personas = await fetch('/api/personas.json');
+		const allPersonas = await personas.json();
 
 		return {
 			props: {
-				constraints: allConstraints
+				constraints: allConstraints,
+				personas: allPersonas
 			}
 		};
 	};
@@ -14,6 +17,7 @@
 
 <script lang="ts">
 	export let constraints: any;
+	export let personas: any;
 </script>
 
 <svelte:head>
@@ -21,23 +25,26 @@
 	<meta property="og:title" content="Medium Mashup: An Innovation Game" />
 </svelte:head>
 
-<h3>Welcome to Medium Mashup!</h3>
-<p>
+<h3 class="text-2xl mb-3">Welcome to Medium Mashup!</h3>
+<p class="mb-3">
 	Medium Mashup is an Innovation Game where you invent a new tool to solve a specific persona's
 	problem using randomly selected mediums and notations. The purpose of Medium Mashup is to help you
 	move beyond features of a software tool to the underlying Mediums and Notations. Medium Mashup is
 	an Innovation Game where you invent a new tool to solve a specific persona's problem using
-	randomly selected Mediums and Notations. The purpose of Medium Mashup is to help you move beyond
-	features of a software tool to the underlying Mediums and Notations.
+	randomly selected Mediums and Notations.
+</p>
+<p class="mb-3">
+	The purpose of Medium Mashup is to help you move beyond features of a software tool to the
+	underlying Mediums and Notations.
 </p>
 
-<h2>The Setup</h2>
-<p>
+<h2 class="mb-3 text-3xl">The Setup</h2>
+<p class="mb-3">
 	You're a toolsmith. You specialize in building bespoke tools for specialized use cases with
 	arbitrary constraints. You operate as a team under tight timelines, and you (almost) always
 	deliver. I hope you're up for today's challenge!
 </p>
-<ol>
+<ol class="mb-3 list-decimal pl-10">
 	<li>
 		<strong>Gather materials.</strong> You'll need the typical paper prototyping materials: unlined and
 		grid paper, multi-colored sharpies, sticky notes, scissors, tape, highlighters, rulers.
@@ -64,9 +71,9 @@
 	</li>
 </ol>
 
-<h2>Advice for Presenting The Solution</h2>
-<p>Here are some questions you might want to answer:</p>
-<ul>
+<h2 class="mb-3 text-3xl">Advice for Presenting The Solution</h2>
+<p class="mb-3">Here are some questions you might want to answer:</p>
+<ul class="mb-3 pl-10 list-disc">
 	<li>What did you choose to include and why?</li>
 	<li>What did you leave out?</li>
 	<li>
@@ -75,29 +82,37 @@
 	</li>
 </ul>
 
-<h2>The Constraint Deck</h2>
-<p>
+<h2 class="mb-3 text-3xl">The Constraint Deck</h2>
+<p class="mb-3">
 	The Constraint deck consists of Mediums and Notations that must be used in the tool you design for
 	the Client.
 </p>
 
-<ul>
+<ul class="mb-3 pl-10 list-disc">
 	{#each constraints as constraint}
 		<li>
-			<span><a href={constraint.path}>{constraint.meta.title}</a></span>
+			<span
+				><a class="border-b-2 border-slate-300 hover:border-slate-700" href={constraint.path}
+					>{constraint.meta.title}</a
+				></span
+			>
 		</li>
 	{/each}
 	<li><span>More coming soon...</span></li>
 </ul>
 
-<h2>The Persona Deck</h2>
-<p>
+<h2 class="mb-3 text-3xl">The Persona Deck</h2>
+<p class="mb-3">
 	The Persona deck consists of clients with specific Workflow Goals that you must build a tool for.
 </p>
-<ul>
-	<li><span>Historical Fiction Author</span></li>
-	<li><span>Video Game Maker</span></li>
-	<li><span>Construction Project Manager</span></li>
-	<li><span>Children's Museum Curator</span></li>
-	<li><span>More coming soon...</span></li>
+<ul class="mb-3 pl-10 list-disc">
+	{#each personas as persona}
+		<li>
+			<span
+				><a class="border-b-2 border-slate-300 hover:border-slate-700" href={persona.path}
+					>{persona.meta.name}</a
+				></span
+			>
+		</li>
+	{/each}
 </ul>
