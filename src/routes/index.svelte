@@ -102,9 +102,59 @@
 	The Persona deck consists of clients with specific Workflow Goals that you must build a tool for.
 </p>
 <ul class="mb-3 pl-10 list-disc">
-	<li><span>Historical Fiction Author</span></li>
-	<li><span>Video Game Maker</span></li>
-	<li><span>Construction Project Manager</span></li>
-	<li><span>Children's Museum Curator</span></li>
-	<li><span>More coming soon...</span></li>
+	<li>
+		<span>Historical Fiction Author</span>
+		<ul>
+			<li>Historical time period research.</li>
+			<li>Planning the plot of the story.</li>
+			<li>Revising the manuscript with feedback from others.</li>
+			<li>Ensuring narrative consistency.</li>
+		</ul>
+	</li>
+
+	<li>
+		<span>Rendering Systems Engineer</span>
+		<ul>
+			<li>Literature review for current research.</li>
+			<li>Benchmarking the performance of the engine.</li>
+			<li>Building prototypes to showcasing engine capabilities.</li>
+			<li>Presenting their engine on stage at a conference.</li>
+		</ul>
+	</li>
+	<li>
+		<span>Construction Project Manager</span>
+		<ul>
+			<li>Ensuring a safe worksite.</li>
+			<li>Coordinating material availability.</li>
+			<li>Communicating overall timelines to all stakeholders.</li>
+			<li>Update the building plans / blueprints as changes occur.</li>
+		</ul>
+	</li>
+	<li>
+		<span>Children's Museum Curator</span>
+		<ul>
+			<li>Identifying themes that the museum wants to communicate.</li>
+			<li>Source exhibits for the museum.</li>
+			<li>Understand what children want and what they like.</li>
+			<li>Track a budget and keep exhibits within budget.</li>
+		</ul>
+	</li>
+	<li>
+		<span>Mayorial Candidate for mid-sized US city</span>
+		<ul>
+			<li>Campaign trail planning–where does the candidate need to be and when.</li>
+			<li>Track current indicators for likelihood to get elected.</li>
+			<li>Raise money.</li>
+			<li>Connect with voters.</li>
+		</ul>
+	</li>
+	<li>
+		<span>Professional Basketball Player</span>
+		<ul>
+			<li>Review "game tape."</li>
+			<li>Observing and reflecting on their personal performance.</li>
+			<li>Studying the techniques of other players.</li>
+			<li>Plan</li>
+		</ul>
+	</li>
 </ul>
