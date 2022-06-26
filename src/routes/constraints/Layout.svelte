@@ -11,16 +11,13 @@
 	export let image: any;
 </script>
 
-<div class="mt-5 md:w-2xl md:h-96 rounded-md shadow-lg">
-	<div class="w-56 h-96 float-left rounded-l-md border-r-2">
-		<img src="/{image}" alt={title} class="h-full w-full object-cover" />
-	</div>
-	<div class="ml-56 p-3 relative h-full">
+<div class="mt-5 md:w-2xl md:h-96 rounded-md border-2">
+	<div class="p-3 relative h-full">
 		<span
 			class="text-slate-200 bg-slate-800 uppercase text-sm font-semibold float-right p-2 rounded-md"
 			>{constraintType}</span
 		>
-		<h1 class="text-3xl uppercase font-semibold">{title}</h1>
+		<h1 class="text-5xl mb-5 uppercase font-semibold">{title}</h1>
 
 		<p class="text-lg">👥 {inventors}</p>
 		<p class="text-lg">⏳ {year}</p>
