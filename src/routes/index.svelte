@@ -3,10 +3,13 @@
 	export const load: Load = async ({ fetch }) => {
 		const constraints = await fetch('/api/constraints.json');
 		const allConstraints = await constraints.json();
+		const personas = await fetch('/api/personas.json');
+		const allPersonas = await personas.json();
 
 		return {
 			props: {
-				constraints: allConstraints
+				constraints: allConstraints,
+				personas: allPersonas
 			}
 		};
 	};
@@ -14,6 +17,7 @@
 
 <script lang="ts">
 	export let constraints: any;
+	export let personas: any;
 </script>
 
 <svelte:head>
@@ -102,59 +106,13 @@
 	The Persona deck consists of clients with specific Workflow Goals that you must build a tool for.
 </p>
 <ul class="mb-3 pl-10 list-disc">
-	<li>
-		<span>Historical Fiction Author</span>
-		<ul>
-			<li>Historical time period research.</li>
-			<li>Planning the plot of the story.</li>
-			<li>Revising the manuscript with feedback from others.</li>
-			<li>Ensuring narrative consistency.</li>
-		</ul>
-	</li>
-
-	<li>
-		<span>Rendering Systems Engineer</span>
-		<ul>
-			<li>Literature review for current research.</li>
-			<li>Benchmarking the performance of the engine.</li>
-			<li>Building prototypes to showcasing engine capabilities.</li>
-			<li>Presenting their engine on stage at a conference.</li>
-		</ul>
-	</li>
-	<li>
-		<span>Construction Project Manager</span>
-		<ul>
-			<li>Ensuring a safe worksite.</li>
-			<li>Coordinating material availability.</li>
-			<li>Communicating overall timelines to all stakeholders.</li>
-			<li>Update the building plans / blueprints as changes occur.</li>
-		</ul>
-	</li>
-	<li>
-		<span>Children's Museum Curator</span>
-		<ul>
-			<li>Identifying themes that the museum wants to communicate.</li>
-			<li>Source exhibits for the museum.</li>
-			<li>Understand what children want and what they like.</li>
-			<li>Track a budget and keep exhibits within budget.</li>
-		</ul>
-	</li>
-	<li>
-		<span>Mayorial Candidate for mid-sized US city</span>
-		<ul>
-			<li>Campaign trail planning–where does the candidate need to be and when.</li>
-			<li>Track current indicators for likelihood to get elected.</li>
-			<li>Raise money.</li>
-			<li>Connect with voters.</li>
-		</ul>
-	</li>
-	<li>
-		<span>Professional Basketball Player</span>
-		<ul>
-			<li>Review "game tape."</li>
-			<li>Observing and reflecting on their personal performance.</li>
-			<li>Studying the techniques of other players.</li>
-			<li>Plan</li>
-		</ul>
-	</li>
+	{#each personas as persona}
+		<li>
+			<span
+				><a class="border-b-2 border-slate-300 hover:border-slate-700" href={persona.path}
+					>{persona.meta.name}</a
+				></span
+			>
+		</li>
+	{/each}
 </ul>
